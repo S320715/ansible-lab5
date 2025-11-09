@@ -1,0 +1,9 @@
+---
+- name: Install NGINX Web Server
+  hosts: local
+  become: yes
+  tasks:
+    - name: Install NGINX
+      apt:
+        name: nginx
+        state: present

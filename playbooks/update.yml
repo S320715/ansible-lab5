@@ -1,0 +1,11 @@
+---
+- name: Update and upgrade system
+  hosts: local
+  become: yes
+  tasks:
+    - name: Update apt repository cache
+      apt:
+        update_cache: yes
+    - name: Upgrade all installed packages
+      apt:
+        upgrade: dist

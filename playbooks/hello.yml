@@ -1,0 +1,7 @@
+---
+- name: Hello World Playbook
+  hosts: local
+  tasks:
+    - name: Print hello message
+      debug:
+        msg: "Hello, Ansible and DevOps learners!"
